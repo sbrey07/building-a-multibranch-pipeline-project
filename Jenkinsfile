@@ -15,7 +15,9 @@ pipeline {
             }
         }
         stage('Test') {
-                sh './jenkins/scripts/test.sh'
+            steps {
+               echo 'Simulates a test'
+               sleep 10
             }
         }
     }
